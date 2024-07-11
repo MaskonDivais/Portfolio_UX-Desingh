@@ -1,0 +1,1429 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('./fonts/Jura-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('./fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    user-select: none;
+    text-align: justify;
+
+}
+
+.Vertika {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Vertika.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Horison {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.Horison.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.HorisonLeft{
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.HorisonLeft.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.IL {
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.A1 {
+    color: #A28444;
+    transition: all 0.2s;
+}
+
+.A1:hover {
+    color: #000000;
+}
+
+.H1 {
+    grid-area: H1;
+    display: inline-flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.H2 {
+    width: max-content;
+    margin: auto;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.FH3 {
+    color: #979797;
+    font-weight: 400;
+    font-size: 14px;
+    margin: auto;
+}
+
+.FH3-1 {
+    color: #979797;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.H3 {
+    font-size: 16px;
+}
+
+.YH1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #A28444;
+}
+
+/* -------------------------------------------Contact------------------------------------------- */
+.Conteiner {
+    margin: 0px;
+    padding: 0px;
+    height: max-content;
+    width: 100%;
+    background: #ffffff;
+}
+
+
+
+.Contact {
+    display: grid;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/fon-contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.Contein-Contact {
+    display: inline-flex;
+    position: relative;
+    width: 1280px;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contein-Text {
+    display: grid;
+    position: relative;
+    height: max-content;
+    width: 40%;
+    grid-template-areas:
+        "H1 H1"
+        "Line-Vert hp1"
+        "Line-Vert hp2"
+        "Line-Vert hp3"
+        "Line-Vert hp4"
+        "Line-Vert ButtonContact";
+    gap: 1rem;
+}
+
+.hp1 {
+    grid-area: hp1;
+}
+
+.hp2 {
+    grid-area: hp2;
+}
+
+.hp3 {
+    grid-area: hp3;
+}
+
+.hp4 {
+    grid-area: hp4;
+}
+
+.Line-Vert {
+    grid-area: Line-Vert;
+    height: auto;
+    width: 3px;
+    background-color: #A28444;
+}
+
+.ButtonContact {
+    grid-area: ButtonContact;
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 0px;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.ButtonContact:hover {
+    background: #28292a;
+    color: #A28444;
+}
+
+.ButtonContinue {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 0px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.ButtonContinue:hover {
+    background: #28292a;
+    color: #A28444;
+}
+
+.Contein-Form {
+    display: grid;
+    position: relative;
+    height: max-content;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #ffffff;
+    border: solid 1px #A28444;
+    border-radius: 15px;
+}
+
+.Form {
+    display: grid;
+    width: 350px;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.Form-Inp {
+    display: grid;
+}
+
+.Input-Form {
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #A28444;
+    padding: 5px 0;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    min-height: 20px;
+    max-height: 150px;
+}
+
+.Input-Form:focus {
+    border-bottom: 2px solid #007bff;
+}
+
+.Input-Form::placeholder {
+    color: #ccc;
+}
+
+/* -------------------------------------------Contact------------------------------------------- */
+.FH1 {
+
+    display: inline-flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.FH2 {
+    grid-area: FH2;
+    display: inline-flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.H4 {
+
+    width: max-content;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.FP {
+    font-size: 16px;
+}
+
+.FA {
+
+    font-size: 18px;
+    font-weight: 800;
+    color: #A28444;
+    transition: all 0.2s;
+}
+
+.FA:hover {
+    color: #000000;
+}
+
+.EfpD1 {
+    grid-area: EfpD1;
+    font-size: 18px;
+}
+
+.EfpD2 {
+    grid-area: EfpD2;
+    font-size: 18px;
+}
+
+.Efp1 {
+    grid-area: Efp1;
+}
+
+.Efp2 {
+    grid-area: Efp2;
+}
+
+.Efp3 {
+    grid-area: Efp3;
+}
+
+.Efp4 {
+    grid-area: Efp4;
+}
+
+.Efp5 {
+    grid-area: Efp5;
+}
+
+.Efp6 {
+    grid-area: Efp6;
+}
+
+.FPD1 {
+    grid-area: FPD1;
+}
+
+.FPD2 {
+    grid-area: FPD2;
+    color: #A28444;
+}
+
+.FPD3 {
+    grid-area: FPD3;
+}
+
+.FPD4 {
+    grid-area: FPD4;
+    color: #A28444;
+}
+
+.FPD5 {
+    grid-area: FPD5;
+}
+
+.FPD6 {
+    grid-area: FPD6;
+    color: #A28444;
+}
+
+.Footer {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    justify-items: center;
+    background-image: url(./images/fon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.FooterUP {
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    height: calc(100vh - 250px);
+    width: 1280px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.FooterDOWN {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    height: 250px;
+    width: inherit;
+    background: #28292a;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content-Up {
+    display: inline-flex;
+    position: relative;
+    gap: 2rem;
+}
+
+.Content-Image {
+    display: block;
+    position: relative;
+    height: 420px;
+    width: 640px;
+    background-image: url(./images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Content-Text-Up {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "Efp1 Efp2"
+        "Efp3 Efp4"
+        "Efp5 Efp6";
+    width: 50%;
+
+}
+
+.Content-Text-Down {
+    display: grid;
+    position: relative;
+    width: 600px;
+    gap: 2.5rem;
+}
+
+
+.Content-Text {
+    display: grid;
+    align-content: space-between;
+}
+
+.ButtonFooter {
+    display: block;
+    position: relative;
+    width: max-content;
+    height: 35px;
+    padding: 0px 1.5rem;
+    font-size: 18px;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 0px;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+
+.ButtonFooter:hover {
+    background: #28292a;
+    color: #A28444;
+}
+
+.Contein-Text-DOWN {
+    display: grid;
+    position: relative;
+    height: auto;
+    width: 1280px;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "FH2 EfpD1 EfpD2"
+        "FLH FLH FLH"
+        "Efp5 Efp6 Efp2";
+    align-content: center;
+    justify-content: center;
+}
+
+.Cont-Image-Down {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.Line-Horison {
+    grid-area: FLH;
+    display: block;
+    height: 3px;
+    width: auto;
+    background: #A28444;
+}
+
+
+
+.FImage {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: #A28444;
+    border: solid 1px #ffffff00;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.FImage:hover {
+    background-color: #28292a;
+    border: solid 1px #ffffff;
+
+}
+
+.IMG1 {
+    background-image: url(./images/GitHub.png);
+}
+
+.IMG2 {
+    background-image: url(./images/LeetCode.png);
+}
+
+.IMG3 {
+    background-image: url(./images/Linked.png);
+}
+
+.IMG4 {
+    background-image: url(./images/Instagram.png);
+}
+
+.Footer-Down-Cont {
+    display: grid;
+    position: relative;
+    grid-template-areas:
+        "FPD1 FPD2"
+        "FPD3 FPD4"
+        "FPD5 FPD6";
+
+}
+
+.Deteil-1 {
+    width: 70%;
+    text-align: left;
+}
+
+/* -------------------------------------------END-Contact------------------------------------------- */
+/* -------------------------------------------Popular------------------------------------------- */
+.PH3 {
+    width: max-content;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.PPB {
+
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.PPBM {
+
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.PPH3 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.Popular {
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/popular.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Fon-Pop {
+    display: grid;
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    background-color: #ffffff6e;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+    align-items: center;
+    justify-items: center;
+    left: 0px;
+}
+
+.Conteiner-Pop-Text {
+    display: grid;
+    position: relative;
+    width: 50%;
+    height: max-content;
+    align-items: center;
+}
+
+.Pop-Cont-W {
+    display: inline-flex;
+    position: relative;
+    height: max-content;
+    width: 1280px;
+    align-items: center;
+}
+
+.Pop-Text {
+    display: grid;
+    position: relative;
+    height: max-content;
+    width: 400px;
+    gap: 1rem;
+}
+
+.Cont-Star {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.Star {
+    width: 30px;
+    height: 30px;
+    background-color: #e9ae30;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+}
+
+.Cont-Button-Pop {
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ButtonPopularLeft {
+    display: block;
+    position: relative;
+    width: max-content;
+    height: 35px;
+    padding: 0px 1.5rem;
+    font-size: 18px;
+    font-weight: 300;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 1px #ffffff00;
+
+    border-radius: 25px;
+    transition: all 0.2s;
+    width: 160px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.ButtonPopularRigth {
+    display: block;
+    position: relative;
+    width: max-content;
+    height: 35px;
+    padding: 0px 1.5rem;
+    font-size: 18px;
+    font-weight: 300;
+    background: #ffffff;
+    color: #A28444;
+    border: solid 1px #A28444;
+    border-radius: 25px;
+    transition: all 0.2s;
+    width: 160px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.ButtonPopularLeft:hover {
+    background: #ffffff;
+    color: #A28444;
+    border: solid 1px #A28444;
+}
+
+.ButtonPopularRigth:hover {
+    background: #A28444;
+    color: #ffffff;
+    border: solid 1px #A28444;
+}
+
+.hidden {
+    display: none;
+    transition: all 0.3s;
+}
+
+.visible {
+    display: grid;
+    position: relative;
+    height: 500px;
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    z-index: 1;
+    padding: 2rem;
+    gap: 1rem;
+    grid-template-areas:
+        "Image-Pop-List Cont-Prev-Text1"
+        "Cont-Prev-Text2 Cont-Prev-Text2";
+    box-shadow: 0 14px 28px rgb(0 0 0 / 26%), 0 10px 10px rgb(0 0 0 / 26%);
+}
+
+.Cont-Prev-Block1 {
+    display: grid;
+    position: relative;
+    gap: 0.5rem;
+    grid-template-areas:
+        "Ppv1 Ppv2"
+        "Ppv3 Ppv4"
+        "Ppv5 Ppv6"
+        "Ppv7 Ppv8";
+}
+
+.Cont-Prev-Block2 {
+    display: grid;
+    position: relative;
+    gap: 0.5rem;
+    grid-template-areas:
+        "Ppv1 Ppv2"
+        "Ppv3 Ppv4"
+        "Ppv5 Ppv6";
+    justify-content: space-between;
+    width: 50%;
+}
+
+.Ppv1 {
+    grid-area: Ppv1;
+}
+
+.Ppv2 {
+    grid-area: Ppv2;
+    color: #A28444;
+}
+
+.Ppv3 {
+    grid-area: Ppv3;
+}
+
+.Ppv4 {
+    grid-area: Ppv4;
+    color: #A28444;
+}
+
+.Ppv5 {
+    grid-area: Ppv5;
+}
+
+.Ppv6 {
+    grid-area: Ppv6;
+    color: #A28444;
+}
+
+.Ppv7 {
+    grid-area: Ppv7;
+}
+
+.Ppv8 {
+    grid-area: Ppv8;
+    color: #A28444;
+}
+
+.PpvD1 {}
+
+.PpvD2 {
+    color: #A28444;
+}
+
+.PpvD3 {}
+
+.PpvD4 {
+    color: #A28444;
+}
+
+.PpvD5 {}
+
+.PpvD6 {
+    color: #A28444;
+}
+
+.Cont-Prev-Button {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.Cont-Prev-Text1 {
+    grid-area: Cont-Prev-Text1;
+    display: grid;
+    gap: 1rem;
+}
+
+.Cont-Prev-Text2 {
+    grid-area: Cont-Prev-Text2;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Image-Pop-List {
+    grid-area: Image-Pop-List;
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    background-image: url(./images/prev.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ButtonPrev {
+    display: block;
+    position: relative;
+
+    height: 35px;
+    padding: 0px 1.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 1px #ffffff00;
+    border-radius: 25px;
+    width: 160px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.ButtonPrev:hover {
+    background: #28292a;
+    color: #A28444;
+}
+
+/* -------------------------------------------END-Popular------------------------------------------- */
+/* -------------------------------------------Main------------------------------------------- */
+.MP {
+    width: max-content;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+.MA {
+    /* font-weight: 800; */
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.MA:Hover {
+    color: #A28444;
+
+}
+
+.YMH1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #A28444;
+}
+
+.YEL {
+    color: #A28444;
+}
+
+.MH1 {
+    display: inline-flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+}
+.MMH1{
+    display: inline-flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+
+}
+.MPA {
+    color: #fff;
+    font-size: 18px;
+}
+
+.MPAS {
+    color: #fff;
+    font-size: 20px;
+    text-align: end;
+}
+
+.Main {
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/main.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu {
+    display: grid;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+    background: #ffffff;
+    justify-items: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 26%), 0 10px 10px rgb(0 0 0 / 26%);
+
+    background-image: url(./images/fon-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Cont-Menu {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    width: 1280px;
+    height: max-content;
+    align-items: center;
+    align-content: center;
+
+}
+
+.Logo {
+    display: block;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+
+.Logo:hover {
+    filter: sepia(100%) hue-rotate(0deg) saturate(200%);
+}
+
+.Cont-Menu-List {
+    display: inline-flex;
+    position: relative;
+    gap: 1rem;
+}
+
+.Cont-Menu-Leang {
+    display: inline-flex;
+    position: absolute;
+    gap: 1rem;
+    right: 0px;
+}
+
+.Main-Content {
+    display: grid;
+    position: relative;
+
+    height: auto;
+    max-height: 90vh;
+    width: 1280px;
+    grid-template-rows: 4fr 1fr;
+}
+
+.Main-Content-DOWN {
+    display: grid;
+    position: relative;
+   
+    grid-template-columns: auto max-content;
+    justify-content: end;
+
+}
+
+.Line-Vert-Main {
+    display: block;
+    height: 2px;
+    width: auto;
+    background: #A28444;
+}
+
+.Cont-Elem-Main {
+    background: #ffffffa1;
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: center;
+}
+.Cont-ElemImages-Main{
+    background: #ffffffa1;
+    display: grid;
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px
+}
+.Cont-Text_Absolut {
+    display: grid;
+    position: relative;
+    width: 500px;
+    gap: 0.5rem;
+}
+
+.Main-Content-UP {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+/* -------------------------------------------END-Main------------------------------------------- */
+/* -------------------------------------------List------------------------------------------- */
+
+.List {
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(./images/fons.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Cont-List {
+    display: grid;
+    position: relative;
+    width: 1280px;
+    gap: 1rem;
+    max-height: 90vh;
+    overflow: hidden;
+
+}
+
+.Cont-List-Elems {
+    display: inline-flex;
+    position: relative;
+    gap: 1rem;
+}
+
+.Line-Vert-List {
+
+    height: auto;
+    width: 3px;
+    background-color: #A28444;
+}
+
+.Element {
+    display: grid;
+    position: relative;
+    width: -webkit-fill-available;
+    height: max-content;
+
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.Element-Buttons {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.Element-Buttons-Text {
+    display: grid;
+    grid-template-areas: "auto auto";
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.Image-Lists {
+    display: block;
+    position: relative;
+    width: 330px;
+    height: 200px;
+    gap: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+.Image-Lists:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.List-Elems {
+    display: grid;
+    height: 350px;
+    gap: 1rem;
+    /* background: #ededed; */
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgb(0 0 0 / 26%), 0 5px 10px rgb(0 0 0 / 26%);
+    align-items: center;
+    background-image: url(./images/fon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ListButtonUP {
+    display: block;
+    position: relative;
+    height: 35px;
+    padding: 0px 1.5rem;
+    font-size: 18px;
+    font-weight: 300;
+    background: #A28444;
+    color: #ffffff;
+    border: solid 1px #ffffff00;
+    border-radius: 25px;
+    width: 160px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.ListButtonDown {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    color: #A28444;
+    border: solid 1px #a2844400;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.ListButtonUP:hover {
+    background: #ffffff;
+    color: #A28444;
+    border: solid 1px #A28444;
+}
+
+.ListButtonDown:hover {
+    color: #000000;
+}
+
+.Main-Down-Cont {
+    display: grid;
+    position: relative;
+    grid-template-areas:
+        "FPD1 FPD2"
+        "FPD3 FPD4"
+        "FPD5 FPD6";
+    gap: 1rem;
+}
+
+.Cont-Image-Main {}
+
+.Cont-ImageS-Main {
+    display: inline-flex;
+}
+
+.ImageS-Lists {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: 50px;
+    gap: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+.ImageS-Lists:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+/* -------------------------------------------END-List------------------------------------------- */
+
+
+
+.Image_Logo {
+    display: block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff00;
+    border: solid 2px #737373;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px;
+    transition: all 0.3s;
+    filter: sepia(75%) hue-rotate(0deg) saturate(167%);
+}
+
+.Image_Logo:hover {
+    filter: sepia(0%) hue-rotate(0deg) saturate(0%);
+    border: solid 2px #7b7b7b;
+}
+
+.Images-Vert-Main {
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.ILM1 {
+    background-image: url(./images/partner-1.png);
+}
+
+.ILM2 {
+    background-image: url(./images/partner-2.png);
+}
+
+.ILM3 {
+    background-image: url(./images/partner-3.png);
+}
+
+.ILM4 {
+    background-image: url(./images/partner-4.png);
+}
+
+.Cont-Right-List {
+    display: grid;
+    gap: 1rem;
+}
+
+.Cont-Element-All {
+    display: grid;
+    position: relative;
+    width: -webkit-fill-available;
+
+    height: 350px;
+
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    grid-template-columns: 2fr 1fr;
+}
+
+.Text-Rigth-Elems {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.Element-Rigth-Cont {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.Element-Rigth {
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    background: #ededed;
+    align-items: center;
+    height: calc(350px - 2rem);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 7px 10px rgb(0 0 0 / 26%), 0 5px 10px rgb(0 0 0 / 26%);
+}
+
+.Cont-Lists-Slider {
+    display: grid;
+    position: relative;
+    gap: 1rem;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 1fr 1fr auto;
+    max-height: calc(700px + 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem 1rem;
+}
+
+.Cont-Lists-Slider::-webkit-scrollbar {
+    width: 12px;
+}
+.Cont-Lists-Slider::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+.Cont-Lists-Slider::-webkit-scrollbar-thumb {
+    background: #A28444;
+    border-radius: 6px;
+}
+.Cont-Lists-Slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ImageSA-Lists {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 70px;
+    gap: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-color: #ffffff00;
+    border: solid 3px #919191;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+
+
+}
+
+.ImageSAS-Lists {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    gap: 0.5rem;
+    background-size: contain;
+    background-repeat: repeat-y;
+    border-radius: 50%;
+
+
+
+}
+
+.YEL {
+    font-size: 16px;
+    font-weight: 800;
+    color: #A28444;
+}
+
+.YELH {
+    font-size: 18px;
+    font-weight: 800;
+    color: #A28444;
+}
+
+.HIG {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.HIGL {
+    font-size: 18px;
+}
+
+.HIGL {
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+
+.IL1 {
+    background-image: url(./images/partner-4.png);
+}
+
+.IL2 {
+    background-image: url(./images/avatars-3.jpg);
+}
+
+.IMGSL1 {
+    background-image: url(./images/elems2.jpg);
+}
+
+.IMGSL2 {
+    background-image: url(./images/elems3.jpg);
+}
+
+.IMGSL3 {
+    background-image: url(./images/elems4.jpg);
+}
+
+
+
+.IL3 {
+    background-image: url(./images/partner-1.png);
+}
+
+.IL4 {
+    background-image: url(./images/avatars-2.jpg);
+}
+
+.IMGSL4 {
+    background-image: url(./images/elems4.jpg);
+}
+
+.IMGSL5 {
+    background-image: url(./images/elems1.jpg);
+}
+
+.IMGSL6 {
+    background-image: url(./images/elems3.jpg);
+}
+
