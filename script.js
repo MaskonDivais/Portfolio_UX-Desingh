@@ -26,5 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(HoriLef);
     });
 
-
 });

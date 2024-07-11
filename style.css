@@ -24,7 +24,7 @@
     padding: 0px;
     font-family: 'Jura', sans-serif;
     font-weight: 600;
-    user-select: none;
+    /* user-select: none; */
     text-align: justify;
 
 }
@@ -60,6 +60,9 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+
+
 .IL {
     font-weight: 800;
     font-size: 13px;
@@ -1037,7 +1040,7 @@
 /* -------------------------------------------List------------------------------------------- */
 
 .List {
-    display: inline-flex;
+    display: grid;
     margin: 0px;
     padding: 0px;
     height: 100vh;
@@ -1066,6 +1069,7 @@
     display: inline-flex;
     position: relative;
     gap: 1rem;
+    width: inherit;
 }
 
 .Line-Vert-List {
@@ -1299,15 +1303,9 @@
 .Cont-Lists-Slider {
     display: grid;
     position: relative;
-    gap: 1rem;
-
-    display: grid;
-    gap: 2rem;
-    grid-template-rows: 1fr 1fr auto;
-    max-height: calc(700px + 2rem);
+    max-height: calc(700px + 4rem);
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 1rem 1rem;
 }
 
 .Cont-Lists-Slider::-webkit-scrollbar {
@@ -1427,3 +1425,57 @@
     background-image: url(./images/elems3.jpg);
 }
 
+.slider-container {
+    display: grid;
+    position: relative;
+    width: inherit;
+    max-height: 90vh;
+    overflow: hidden;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: inherit;
+}
+.slide {
+    width: 1280px;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+
+    height: 3rem;
+    width: 2rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.nav-button:hover {
+    background-color: #A28444;
+}
+.nav-button.left {
+    left: 0px;
+    background-image: url(./images/nav-button-rigth.png);
+}
+.nav-button.right {
+    right: 0px;
+    background-image: url(./images/nav-button.png);
+}
