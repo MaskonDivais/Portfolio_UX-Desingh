@@ -1517,6 +1517,7 @@
         font-weight: 500;
 
     }
+
     .Cont-Menu {
         width: 768px;
     }
@@ -1608,11 +1609,13 @@
     .FooterUP {
         width: 768px;
         padding: 4rem 0px;
-    height: max-content;
+        height: max-content;
     }
+
     .Content-Text {
         gap: 1rem;
     }
+
     .Content-Up {
         display: grid;
 
@@ -1632,20 +1635,256 @@
     .Footer-Down-Cont {
         gap: 0.5rem;
         grid-template-areas:
-            
+
             "FPD1 FPD2"
             "FPD3 FPD4"
             "FPD5 FPD6";
     }
+
     .Footer {
         height: max-content;
     }
+
     .Contact {
         height: max-content;
     }
 }
 
-@media (max-width: 599px) {
-    /* Стили для телефонов */
+@media (max-width: 767px) {
 
+    /* Стили для телефонов */
+    * {
+
+        font-weight: 500;
+
+    }
+
+    body {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    .Content-Image {
+
+        height: 420px;
+        width: 90%;
+
+    }
+
+    .Content-Text-Down {
+        display: grid;
+        position: relative;
+        width: 90%;
+        gap: 2.5rem;
+    }
+
+    .Cont-Menu {
+        width: calc(100% - 1rem);
+    }
+
+    .Main-Content {
+        width: 100%;
+
+    }
+
+    .Cont-List {
+        width: 100%;
+        padding: 4rem 0px;
+        max-height: 100%;
+    }
+
+    .slide {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .slider-container {
+        max-height: 100%;
+    }
+
+    .Cont-Lists-Slider {
+
+        max-height: max-content;
+
+    }
+
+    .Cont-Element-All {
+        height: max-content;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: auto;
+    }
+
+    .Element {
+        grid-template-columns: auto;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .List-Elems {
+        height: max-content;
+    }
+
+    .Image-Lists {
+        width: calc(384px - 6rem);
+        height: 200px;
+    }
+
+    .ImageS-Lists {
+        width: 96px;
+        height: 50px;
+    }
+
+    .List {
+        height: max-content;
+    }
+
+    .Pop-Cont-W {
+        width: 100%;
+    }
+
+    .visible {
+        width: 100%;
+        top: 5%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .Contein-Contact {
+        display: grid;
+        gap: 5rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 4rem 0px;
+    }
+
+    .Contein-Text {
+
+        width: 90%;
+
+    }
+
+    .FooterUP {
+        width: 100%;
+        padding: 4rem 0px;
+        height: max-content;
+    }
+
+    .Form {
+        display: grid;
+        width: calc(100% - 1rem);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .Content-Text {
+        gap: 1rem;
+    }
+
+    .Content-Up {
+        display: grid;
+
+    }
+
+    .Cont-Text_Absolut {
+        width: calc(100% - 1rem);
+    }
+
+    .Image_Logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .Main-Content-UP {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .Pop-Text {
+
+        width: calc(100% - 1rem);
+
+    }
+
+    .FP {
+        font-size: 14px;
+    }
+    .H1 {
+
+        font-size: 18px;
+    }
+    .MMH1 {
+
+        font-size: 20px;
+    }
+    .MPA {
+        font-size: 15px;
+    }
+    .MPAS {
+  
+        font-size: 18px;
+   
+    }
+    .Main-Content-DOWN {
+
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .Images-Vert-Main {
+        gap: 0.5rem;
+    }
+
+    .FooterDOWN {
+
+        height: max-content;
+        width: inherit;
+        justify-items: center;
+
+    }
+
+    .Contein-Text-DOWN {
+        width: calc(100% - 1rem);
+        gap: 1rem;
+        grid-template-columns: auto;
+        padding: 3rem 0px;
+
+        grid-template-areas:
+            "FH2"
+            "Deteil-1"
+            "FLH"
+            "EfpD1 "
+            "Efp6 "
+            "EfpD2"
+            "Efp2"
+        ;
+
+    }
+
+    .Deteil-1 {
+        grid-area: Deteil-1;
+        width: 100%;
+        text-align: left;
+    }
+
+    .Footer-Down-Cont {
+        gap: 0.5rem;
+        grid-template-areas:
+
+            "FPD1 FPD2"
+            "FPD3 FPD4"
+            "FPD5 FPD6";
+    }
+
+    .Footer {
+        height: max-content;
+    }
+
+    .Contact {
+        height: max-content;
+    }
 }
