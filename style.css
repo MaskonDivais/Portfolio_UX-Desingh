@@ -2043,9 +2043,19 @@
     .H1 {
         font-size: 18px;
     }
+    .FH1 {
+
+        padding: 0px 1rem;
+    }
+    .MH1 {
+
+        width: max-content;
+        margin: auto;
+    }
     /* Стили для планшетов */
     * {
         font-weight: 500;
+        text-align: left;
     }
     .Pop-Text {
         width: calc(320px - 2rem);
@@ -2064,13 +2074,14 @@
         grid-template-columns: auto auto auto auto;
     }
     .Form {
-        width: calc(310px - 2rem);
-        padding: 0.5rem;
+        width: calc(310px - 3rem);
+        padding: 1rem;
     }
     .Cont-ElemImages-Main {
         gap: 0.5rem;
         padding: 0rem;
         border-radius: 0px;
+        padding: 1rem;
 
     }
     .Image_Logo {
@@ -2091,9 +2102,13 @@
     .Cont-Menu-Leang {
         position: relative;
     }
+    .Main-Content-DOWN {
+        justify-content: normal;
+        width: 100%;
 
+    }
     .Main-Content {
-        width: calc(100% - 2rem);
+        width: 100%;
         justify-items: center;
     }
 
@@ -2205,7 +2220,7 @@
     }
 
     .Cont-Prev-Block2 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         width: 100%;
     }
 
