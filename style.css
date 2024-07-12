@@ -63,16 +63,6 @@
 }
 
 
-.HorisonLeft {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.HorisonLeft.show {
-    opacity: 1;
-    transform: translateX(0);
-}
 
 
 .IL {
@@ -1509,9 +1499,8 @@
     background-image: url(./images/nav-button.png);
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1279px) and (orientation: portrait) {
 
-    /* Стили для планшетов */
     * {
 
         font-weight: 500;
@@ -1584,10 +1573,11 @@
 
     .visible {
         width: 730px;
-        top: 5%;
+        top: 50%;
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
+        padding: 1rem;
     }
 
     .Contein-Contact {
@@ -1649,8 +1639,247 @@
         height: max-content;
     }
 }
+@media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
 
-@media (max-width: 767px) {
+    /* Стили для планшетов */
+    * {
+        font-weight: 500;
+    }
+
+    .Menu {
+        width: 100vw;
+    }
+
+    .Cont-Menu {
+        width: calc(100% - 2rem);
+        justify-content: space-around
+    }
+
+    .Cont-Menu-Leang {
+        position: relative;
+    }
+
+    .Main-Content {
+        width: calc(100% - 2rem);
+        justify-items: center;
+    }
+
+
+    .Cont-List {
+        width: calc(600px - 2rem);
+        padding: 4rem 0px;
+        max-height: 100%;
+    }
+
+    .Mobile {
+        display: none;
+    }
+    .Cont-List-Elems {
+        width: 100%;
+    }
+    .slide {
+        width: calc(600px - 2rem);
+        grid-template-columns: auto;
+    }
+    .Element {
+        width: calc(100% - 2rem);
+        grid-template-columns: auto;
+        grid-template-rows: max-content 1fr;
+    }
+    .slider-container {
+        max-height: 100%;
+    }
+
+    .Cont-Lists-Slider {
+
+        max-height: max-content;
+
+    }
+
+    .Cont-Image-Main {
+        width: 100%;
+    }
+
+    .Cont-Element-All {
+        height: max-content;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: auto;
+    }
+
+  
+
+    .List-Elems {
+        height: max-content;
+    }
+
+    .Image-Lists {
+        width: 100%;
+        height: 12rem;
+    }
+
+    .Cont-ImageS-Main {
+        width: 100%;
+    }
+
+    .ImageS-Lists {
+        width: calc(100% / 3);
+        height: 5rem;
+    }
+
+    .List {
+        height: max-content;
+        justify-items: center;
+    }
+
+    .Pop-Cont-W {
+        display: grid;
+        width: calc(100% - 2rem);
+        justify-items: center;
+    }
+
+    .Conteiner-Pop-Text {
+        width: max-content;
+
+    }
+    .Image-Pop-List {
+        height: 450px;
+        width: inherit;
+
+    }
+    .Cont-Prev-Text1 {
+        gap: 0.5rem;
+    }
+    .Cont-Prev-Block1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Cont-Prev-Text2 {
+        justify-items: center;
+        display: grid;
+
+    }
+    .Cont-Prev-Block2 {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .visible {
+        width: calc(600px - 6rem);
+        height: max-content;
+        padding: 2rem;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        grid-template-areas:
+        "Image-Pop-List Image-Pop-List "
+        "Cont-Prev-Text1 Cont-Prev-Text1"
+        "Cont-Prev-Text2 Cont-Prev-Text2";
+    }
+
+    .Content-Image {
+
+        width: calc(100% - 2rem);
+
+    }
+
+    .Contein-Contact {
+        padding: 4rem 0rem;
+        gap: 2rem;
+        width: calc(100% - 2rem);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .Contein-Text {
+
+        width: 80%;
+
+    }
+
+    .FooterUP {
+        width: calc(100% - 2rem);
+        padding: 4rem 0px;
+        height: max-content;
+    }
+
+    .Content-Text {
+        gap: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .Content-Up {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+
+
+    .Cont-Image-Down {
+        grid-area: CID1;
+    }
+
+    .Contein-Text-DOWN {
+        width: calc(75% - 1rem);
+        gap: 1rem;
+        grid-template-columns: auto;
+        padding: 3rem 0px;
+        grid-template-areas:
+            "FH2"
+            "Deteil-1"
+            "FLH"
+            "EfpD2"
+            "Efp6"
+            "EfpD1"
+            "CID1"
+        ;
+    }
+
+    .FooterDOWN {
+
+        height: max-content;
+    }
+
+
+    .FooterDOWN {
+
+        justify-items: center;
+    }
+
+    .Deteil-1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Footer-Down-Cont {
+        gap: 0.5rem;
+        grid-template-areas:
+
+            "FPD1 FPD2"
+            "FPD3 FPD4"
+            "FPD5 FPD6";
+    }
+
+    .Footer {
+        height: max-content;
+    }
+
+    .Contact {
+        height: max-content;
+    }
+
+    .Content-Text-Down {
+
+        width: auto;
+
+    }
+}
+
+
+@media (max-width: 599px) {
 
     /* Стили для телефонов */
     * {
@@ -1813,22 +2042,27 @@
     .FP {
         font-size: 14px;
     }
+
     .H1 {
 
         font-size: 18px;
     }
+
     .MMH1 {
 
         font-size: 20px;
     }
+
     .MPA {
         font-size: 15px;
     }
+
     .MPAS {
-  
+
         font-size: 18px;
-   
+
     }
+
     .Main-Content-DOWN {
 
         grid-template-columns: auto;

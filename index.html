@@ -26,11 +26,11 @@
       <div class="Cont-Menu">
         <a href=""><img src="./images/Logo.png" title="" class="Logo"></a>
         <div class="Cont-Menu-List">
-          <a class="MA " href="">HOME</a>
-          <a class="MA" href="">LIST</a>
-          <a class="MA" href="">EXSAM</a>
-          <a class="MA" href="">CONTACT</a>
-          <a class="MA" href="">NEW</a>
+          <a class="MA" href="#My-Main">HOME</a>
+          <a class="MA" href="#My-List">LIST</a>
+          <a class="MA" href="#My-Popular">EXSAM</a>
+          <a class="MA" href="#My-Contact">CONTACT</a>
+          <a class="MA" href="#My-Footer">NEW</a>
         </div>
         <div class="Cont-Menu-Leang">
           <a class="MA" href="">PL</a>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="Main">
+    <div id="My-Main" class="Main">
       <div class="Main-Content">
         <div class="Main-Content-UP">
           <div class="Cont-Text_Absolut Vertika">
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="List">
+    <div id="My-List" class="List">
       <div class="Cont-List">
         <h3 class="MH1">
           <p class="YMH1">VASNTIS &#160</p>AS VELOT
@@ -169,7 +169,7 @@
                       </div>
                     </div>
       
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList Mobile">
                       <div class="List-Elems">
                         <div class="Element">
         
@@ -244,7 +244,7 @@
 
                   </div>
                   <div class="slide">
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList Mobile">
                       <div class="List-Elems ">
                         <div class="Element">
           
@@ -317,7 +317,7 @@
                       </div>
                     </div>
       
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList ">
                       <div class="List-Elems">
                         <div class="Element">
         
@@ -464,7 +464,7 @@
                       </div>
                     </div>
       
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList Mobile">
                       <div class="List-Elems">
                         <div class="Element">
         
@@ -538,7 +538,7 @@
                     </div>
                   </div>
                   <div class="slide">
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList Mobile">
                       <div class="List-Elems ">
                         <div class="Element">
           
@@ -611,7 +611,7 @@
                       </div>
                     </div>
       
-                    <div class="Cont-Element-All HoriLefList">
+                    <div class="Cont-Element-All HoriLefList ">
                       <div class="List-Elems">
                         <div class="Element">
         
@@ -695,7 +695,7 @@
     </div>
   </div>
 
-  <div class="Popular">
+  <div id="My-Popular" class="Popular">
 
     <div class="Fon-Pop"></div>
     <div class="Pop-Cont-W">
@@ -715,11 +715,11 @@
             eget. Sed viverra ipsum nunc aliquet bibendum enim.
             Eu lobortis elementum nibh tellus molestie nunc non
             blandit massa. Natoque penatibus et magnis dis. Bibendum at varius vel pharetra vel turpis nunc eget.
-            Imperdiet proin fermentum leo vel orci porta non pulvinar.</p>
-
           <div class="Cont-Button-Pop">
             <input type="submit" class="ButtonPopularLeft" value="Watch">
-            <form id="detailsForm"><input type="submit" class="ButtonPopularRigth" value="More details"></form>
+            <form id="moreDetailsForm">
+              <input type="submit" class="ButtonPopularRigth" value="More details">
+            </form>
           </div>
         </div>
       </div>
@@ -757,7 +757,9 @@
             </div>
             <div class="Cont-Prev-Button">
               <input type="submit" class="ButtonPrev" value="Contact Us">
-              <input type="submit" class="ButtonPrev" value="Add to library">
+              <form id="closeDetailsForm">
+                <input type="submit" class="ButtonPopularRigth" value="Close">
+              </form>
             </div>
 
           </div>
@@ -766,7 +768,7 @@
     </div>
   </div>
 
-  <div class="Contact">
+  <div id="My-Contact" class="Contact">
     <div class="Contein-Contact">
       <div class="Contein-Text Horison">
         <h3 class="H1">
@@ -813,14 +815,14 @@
     </div>
   </div>
 
-  <div class="Footer">
+  <div id="My-Footer" class="Footer">
     <div class="FooterUP">
       <h3 class="FH1">
         <p class="YH1">NEW &#160</p>IN THIS MONTH
       </h3>
       <div class="Content-Up">
         <div class="Content-Image Vertika"></div>
-        <div class="Content-Text HorisonLeft">
+        <div class="Content-Text Horison">
 
           <h4 class="H4">Slise-Flex Apartment</h4>
 
@@ -918,11 +920,22 @@
 
   window.addEventListener('resize', updateSlider);
 </script>
-  <script>
-    document.getElementById('detailsForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      document.getElementById('detailsBlock').classList.toggle('visible');
-    });
+<script>
+  document.getElementById('moreDetailsForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const detailsBlock = document.getElementById('detailsBlock');
+    if (!detailsBlock.classList.contains('visible')) {
+      detailsBlock.classList.add('visible');
+    }
+  });
+  
+  document.getElementById('closeDetailsForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const detailsBlock = document.getElementById('detailsBlock');
+    if (detailsBlock.classList.contains('visible')) {
+      detailsBlock.classList.remove('visible');
+    }
+  });
   </script>
 </body>
 
