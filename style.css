@@ -1499,7 +1499,7 @@
     background-image: url(./images/nav-button.png);
 }
 
-@media (min-width: 800px) and (max-width: 1279px) and (orientation: portrait) {
+@media (min-width: 800px) and (max-width: 1024px) and (orientation: portrait) {
 
     * {
 
@@ -1639,6 +1639,7 @@
         height: max-content;
     }
 }
+
 @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
 
     /* Стили для планшетов */
@@ -1674,18 +1675,22 @@
     .Mobile {
         display: none;
     }
+
     .Cont-List-Elems {
         width: 100%;
     }
+
     .slide {
         width: calc(600px - 2rem);
         grid-template-columns: auto;
     }
+
     .Element {
         width: calc(100% - 2rem);
         grid-template-columns: auto;
         grid-template-rows: max-content 1fr;
     }
+
     .slider-container {
         max-height: 100%;
     }
@@ -1706,7 +1711,7 @@
         grid-template-columns: auto;
     }
 
-  
+
 
     .List-Elems {
         height: max-content;
@@ -1741,26 +1746,32 @@
         width: max-content;
 
     }
+
     .Image-Pop-List {
         height: 450px;
         width: inherit;
 
     }
+
     .Cont-Prev-Text1 {
         gap: 0.5rem;
     }
+
     .Cont-Prev-Block1 {
         grid-template-columns: 1fr 1fr;
     }
+
     .Cont-Prev-Text2 {
         justify-items: center;
         display: grid;
 
     }
+
     .Cont-Prev-Block2 {
         grid-template-columns: 1fr 1fr;
         width: 100%;
     }
+
     .visible {
         width: calc(600px - 6rem);
         height: max-content;
@@ -1771,9 +1782,9 @@
         transform: translate(-50%, -50%);
         overflow: hidden;
         grid-template-areas:
-        "Image-Pop-List Image-Pop-List "
-        "Cont-Prev-Text1 Cont-Prev-Text1"
-        "Cont-Prev-Text2 Cont-Prev-Text2";
+            "Image-Pop-List Image-Pop-List "
+            "Cont-Prev-Text1 Cont-Prev-Text1"
+            "Cont-Prev-Text2 Cont-Prev-Text2";
     }
 
     .Content-Image {
@@ -1878,53 +1889,33 @@
     }
 }
 
+/* Стили для Tablet  landscape*/
 
-@media (max-width: 599px) {
+@media (min-width: 600px) and (max-width: 1400px) and (min-height: 600px) and (max-height: 1025px) and (orientation: landscape) {
 
-    /* Стили для телефонов */
     * {
 
         font-weight: 500;
 
     }
 
-    body {
-        display: block;
-        position: absolute;
-        width: 100%;
-    }
-
-    .Content-Image {
-
-        height: 420px;
-        width: 90%;
-
-    }
-
-    .Content-Text-Down {
-        display: grid;
-        position: relative;
-        width: 90%;
-        gap: 2.5rem;
-    }
-
     .Cont-Menu {
-        width: calc(100% - 1rem);
+        width: 768px;
     }
 
     .Main-Content {
-        width: 100%;
+        width: 768px;
 
     }
 
     .Cont-List {
-        width: 100%;
+        width: 768px;
         padding: 4rem 0px;
         max-height: 100%;
     }
 
     .slide {
-        width: 100%;
+        width: 768px;
         grid-template-columns: 1fr 1fr;
 
     }
@@ -1969,21 +1960,22 @@
     }
 
     .Pop-Cont-W {
-        width: 100%;
+        width: 768px;
     }
 
     .visible {
-        width: 100%;
-        top: 5%;
+        width: 730px;
+        top: 50%;
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
+        padding: 1rem;
     }
 
     .Contein-Contact {
         display: grid;
         gap: 5rem;
-        width: 100%;
+        width: 730px;
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -1992,21 +1984,14 @@
 
     .Contein-Text {
 
-        width: 90%;
+        width: 80%;
 
     }
 
     .FooterUP {
-        width: 100%;
+        width: 768px;
         padding: 4rem 0px;
         height: max-content;
-    }
-
-    .Form {
-        display: grid;
-        width: calc(100% - 1rem);
-        gap: 1rem;
-        padding: 1rem;
     }
 
     .Content-Text {
@@ -2018,89 +2003,462 @@
 
     }
 
-    .Cont-Text_Absolut {
-        width: calc(100% - 1rem);
+    .Contein-Text-DOWN {
+        width: 768px;
+        gap: 1rem;
+        grid-template-columns: 2fr 1fr 3fr;
     }
 
-    .Image_Logo {
-        height: 60px;
-        width: 60px;
+    .Deteil-1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Footer-Down-Cont {
+        gap: 0.5rem;
+        grid-template-areas:
+
+            "FPD1 FPD2"
+            "FPD3 FPD4"
+            "FPD5 FPD6";
+    }
+
+    .Footer {
+        height: max-content;
+    }
+
+    .Contact {
+        height: max-content;
+    }
+}
+
+@media (max-width: 599px) and (orientation: portrait) {
+    .Menu {
+
+        display: none;
+    }
+    .MMH1 {
+        font-size: 19px;
+    }
+    .H1 {
+        font-size: 18px;
+    }
+    /* Стили для планшетов */
+    * {
+        font-weight: 500;
+    }
+    .Pop-Text {
+        width: calc(320px - 2rem);
+    }
+    .ButtonPopularLeft {
+        width: max-content;
     }
 
     .Main-Content-UP {
-        display: grid;
-        align-items: center;
+        justify-items: center;
+    }
+    .Cont-Text_Absolut {
+        width: calc(100% - 2rem);
+    }
+    .Images-Vert-Main {
+        grid-template-columns: auto auto auto auto;
+    }
+    .Form {
+        width: calc(310px - 2rem);
+        padding: 0.5rem;
+    }
+    .Cont-ElemImages-Main {
+        gap: 0.5rem;
+        padding: 0rem;
+        border-radius: 0px;
+
+    }
+    .Image_Logo {
+        height: calc(70px - 1rem);
+        width: calc(70px - 1rem);
+        background-size: 40px 40px;
+    }
+
+    .Menu {
+        width: 100vw;
+    }
+
+    .Cont-Menu {
+        width: calc(100% - 2rem);
+        justify-content: space-around
+    }
+
+    .Cont-Menu-Leang {
+        position: relative;
+    }
+
+    .Main-Content {
+        width: calc(100% - 2rem);
         justify-items: center;
     }
 
-    .Pop-Text {
 
-        width: calc(100% - 1rem);
+    .Cont-List {
+        width: 320px;
+        padding: 4rem 0px;
+        max-height: 100%;
+    }
 
+    .Mobile {
+        display: none;
+    }
+
+    .Cont-List-Elems {
+        width: 100%;
+    }
+
+    .slide {
+        width: calc(320px - 2rem);
+        grid-template-columns: auto;
+        padding: 1rem 2rem;
+    }
+    .Element-Rigth {
+
+        height: max-content;
+
+    }
+    .Element {
+        width: calc(100% - 2rem);
+        grid-template-columns: auto;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .slider-container {
+        max-height: 100%;
+    }
+
+    .Cont-Lists-Slider {
+
+        max-height: max-content;
+
+    }
+
+    .Cont-Image-Main {
+        width: 100%;
+    }
+
+    .Cont-Element-All {
+        height: max-content;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: auto;
+    }
+
+
+
+    .List-Elems {
+        height: max-content;
+    }
+
+    .Image-Lists {
+        width: 100%;
+        height: 12rem;
+    }
+
+    .Cont-ImageS-Main {
+        width: 100%;
+    }
+
+    .ImageS-Lists {
+        width: calc(100% / 3);
+        height: 5rem;
+    }
+
+    .List {
+        height: max-content;
+        justify-items: center;
+    }
+
+    .Pop-Cont-W {
+        display: grid;
+        width: calc(100% - 2rem);
+        justify-items: center;
+    }
+
+    .Conteiner-Pop-Text {
+        width: max-content;
+
+    }
+
+    .Image-Pop-List {
+        height: 320px;
+        width: inherit;
+
+    }
+
+    .Cont-Prev-Text1 {
+        gap: 0.5rem;
+    }
+
+    .Cont-Prev-Block1 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Cont-Prev-Text2 {
+        justify-items: center;
+        display: grid;
+
+    }
+
+    .Cont-Prev-Block2 {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .visible {
+        width: calc(320px - 2rem);
+        height: max-content;
+        padding: 0.5rem;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        grid-template-areas:
+            "Image-Pop-List Image-Pop-List "
+            "Cont-Prev-Text1 Cont-Prev-Text1"
+            "Cont-Prev-Text2 Cont-Prev-Text2";
+    }
+    .ButtonPrev {
+        width: max-content;
+    
+    }
+    .ButtonPopularRigth {
+        width: max-content;
+    }
+    .Content-Image {
+
+        width: calc(100% - 2rem);
+
+    }
+
+    .Contein-Contact {
+        padding: 4rem 0rem;
+        gap: 2rem;
+        width: calc(100% - 2rem);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .Contein-Text {
+
+        width: 95%;
+
+    }
+
+    .FooterUP {
+        width: calc(100% - 2rem);
+        padding: 4rem 0px;
+        height: max-content;
+    }
+
+    .Content-Text {
+        gap: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .Content-Up {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+
+
+    .Cont-Image-Down {
+        grid-area: CID1;
     }
 
     .FP {
         font-size: 14px;
     }
 
-    .H1 {
-
-        font-size: 18px;
+    .Content-Text-Up {
+        width: 100%;
     }
 
-    .MMH1 {
-
-        font-size: 20px;
-    }
-
-    .MPA {
-        font-size: 15px;
-    }
-
-    .MPAS {
-
-        font-size: 18px;
-
-    }
-
-    .Main-Content-DOWN {
-
+    .Contein-Text-DOWN {
+        width: calc(100% - 2rem);
+        gap: 1rem;
         grid-template-columns: auto;
-        justify-content: center;
-    }
-
-    .Images-Vert-Main {
-        gap: 0.5rem;
+        padding: 3rem 0px;
+        grid-template-areas:
+            "FH2"
+            "Deteil-1"
+            "FLH"
+            "EfpD2"
+            "Efp6"
+            "EfpD1"
+            "CID1"
+        ;
     }
 
     .FooterDOWN {
 
         height: max-content;
-        width: inherit;
+    }
+
+
+    .FooterDOWN {
+
         justify-items: center;
+    }
+
+    .Deteil-1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Footer-Down-Cont {
+        gap: 0.5rem;
+        grid-template-areas:
+
+            "FPD1 FPD2"
+            "FPD3 FPD4"
+            "FPD5 FPD6";
+    }
+
+    .Footer {
+        height: max-content;
+    }
+
+    .Contact {
+        height: max-content;
+    }
+
+    .Content-Text-Down {
+
+        width: auto;
+
+    }
+}
+
+@media (min-width: 319px) and (max-width: 950px) and (min-height: 400px) and (max-height: 435px) and (orientation: landscape) {
+
+    * {
+
+        font-weight: 500;
+
+    }
+
+    .Cont-Menu {
+        width: 768px;
+    }
+
+    .Main-Content {
+        width: 768px;
+
+    }
+
+    .Cont-List {
+        width: 768px;
+        padding: 4rem 0px;
+        max-height: 100%;
+    }
+
+    .slide {
+        width: 768px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .slider-container {
+        max-height: 100%;
+    }
+
+    .Cont-Lists-Slider {
+
+        max-height: max-content;
+
+    }
+
+    .Cont-Element-All {
+        height: max-content;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: auto;
+    }
+
+    .Element {
+        grid-template-columns: auto;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .List-Elems {
+        height: max-content;
+    }
+
+    .Image-Lists {
+        width: calc(384px - 6rem);
+        height: 200px;
+    }
+
+    .ImageS-Lists {
+        width: 96px;
+        height: 50px;
+    }
+
+    .List {
+        height: max-content;
+    }
+
+    .Pop-Cont-W {
+        width: 768px;
+    }
+
+    .visible {
+        width: 730px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+    }
+
+    .Contein-Contact {
+        display: grid;
+        gap: 5rem;
+        width: 730px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 4rem 0px;
+    }
+
+    .Contein-Text {
+
+        width: 80%;
+
+    }
+
+    .FooterUP {
+        width: 768px;
+        padding: 4rem 0px;
+        height: max-content;
+    }
+
+    .Content-Text {
+        gap: 1rem;
+    }
+
+    .Content-Up {
+        display: grid;
 
     }
 
     .Contein-Text-DOWN {
-        width: calc(100% - 1rem);
+        width: 768px;
         gap: 1rem;
-        grid-template-columns: auto;
-        padding: 3rem 0px;
-
-        grid-template-areas:
-            "FH2"
-            "Deteil-1"
-            "FLH"
-            "EfpD1 "
-            "Efp6 "
-            "EfpD2"
-            "Efp2"
-        ;
-
+        grid-template-columns: 2fr 1fr 3fr;
     }
 
     .Deteil-1 {
-        grid-area: Deteil-1;
         width: 100%;
         text-align: left;
     }
