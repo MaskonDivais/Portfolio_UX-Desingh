@@ -2247,8 +2247,8 @@
     }
 
     .Cont-List {
-        width: 320px;
-        padding: 4rem 0px;
+        width: 100vw;
+        padding: 10rem 0px;
         max-height: 100%;
     }
 
@@ -2261,19 +2261,20 @@
     }
 
     .slide {
-        width: calc(320px - 2rem);
+        width: 100vw;
         grid-template-columns: auto;
         padding: 1rem 2rem;
     }
 
     .Element-Rigth {
-
+        display: none;
         height: max-content;
 
     }
 
     .Element {
-        width: calc(100% - 2rem);
+        width: calc(100vw - 7rem);
+        /* width: calc(100% - 2rem); */
         grid-template-columns: auto;
         grid-template-rows: max-content 1fr;
     }
@@ -2306,7 +2307,7 @@
 
     .Image-Lists {
         width: 100%;
-        height: 12rem;
+        height: 25vh;
     }
 
     .Cont-ImageS-Main {
@@ -2335,19 +2336,28 @@
     }
 
     .Image-Pop-List {
-        height: 320px;
+        height: 20vh;
+        width: -webkit-fill-available;
         width: inherit;
+        margin: auto;
 
     }
+    .Popular {
 
+        height: calc(100vh + 10rem);
+
+    }
     .Cont-Prev-Text1 {
         gap: 0.5rem;
     }
 
     .Cont-Prev-Block1 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto max-content;
     }
-
+    .PPB {
+    
+        font-size: 16px;
+    }
     .Cont-Prev-Text2 {
         justify-items: center;
         display: grid;
@@ -2360,7 +2370,7 @@
     }
 
     .visible {
-        width: calc(320px - 2rem);
+        width: calc(100% - 1rem);
         height: max-content;
         padding: 0.5rem;
         top: 50%;
