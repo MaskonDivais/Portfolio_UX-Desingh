@@ -23,7 +23,12 @@
   
   <div class="Conteiner">
     <div class="Menu">
-      <div class="Cont-Menu">
+      <div class="Burger-Menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="Cont-Menu"  id="menu-list">
         <a href=""><img src="./images/Logo.png" title="" class="Logo"></a>
         <div class="Cont-Menu-List">
           <a class="MA" href="#My-Main">HOME</a>
@@ -38,6 +43,7 @@
         </div>
       </div>
     </div>
+   
 
     <div id="My-Main" class="Main">
       <div class="Main-Content">
@@ -936,6 +942,12 @@
       detailsBlock.classList.remove('visible');
     }
   });
+
+  document.getElementById('burger-menu').addEventListener('click', function() {
+  const menuList = document.getElementById('menu-list');
+  menuList.classList.toggle('show');
+});
+
   </script>
 </body>
 

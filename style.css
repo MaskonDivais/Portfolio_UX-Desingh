@@ -939,7 +939,7 @@
     align-items: center;
     z-index: 5;
     box-shadow: 0 14px 28px rgb(0 0 0 / 26%), 0 10px 10px rgb(0 0 0 / 26%);
-
+    grid-template-rows: 0px auto;
     background-image: url(./images/fon-menu.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -2033,11 +2033,116 @@
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
-    .Menu {
 
-        display: none;
+    .Menu {
+        background-image: none;
+        background-color: #ffffff;
+        padding: 1rem;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 2;
+        border-radius: 10px;
+        border: solid 1px #A28444;
     }
 
+    .Cont-Menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Logo {
+        height: 40px;
+    }
+
+    .Cont-Menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .Cont-Menu-List a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .Burger-Menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+    }
+
+    .Burger-Menu span {
+        height: 4px;
+        width: 30px;
+        background-color: #a28444;
+        margin: 4px 0;
+    }
+
+    .Cont-Menu {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    
+    .Cont-Menu-Leang {
+        position: relative;
+        background: rgb(255, 255, 255);
+        padding: 1rem;
+        gap: 2rem;
+        border-radius: 10px;
+        border: solid 1px #A28444;
+    }
+
+    .Cont-Menu.show {
+        display: flex;
+        position: fixed;    
+        width: calc(100% - 2rem);
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        gap: 2rem;
+        background-image: url(./images/fon.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .Cont-Menu-List {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        gap: 2rem;
+    }
+
+
+    .Burger-Menu {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /*  */
+
+    .MA {
+
+        font-size: 20px;
+     
+
+    }
     .MMH1 {
         font-size: 19px;
     }
@@ -2102,18 +2207,11 @@
         background-size: 40px 40px;
     }
 
-    .Menu {
-        width: 100vw;
-    }
-
     .Cont-Menu {
         width: calc(100% - 2rem);
         justify-content: space-around
     }
 
-    .Cont-Menu-Leang {
-        position: relative;
-    }
 
     .Main-Content-DOWN {
         justify-content: normal;
@@ -2376,33 +2474,133 @@
 
 @media (min-width: 319px) and (max-width: 950px) and (min-height: 300px) and (max-height: 635px) and (orientation: landscape) {
     .Menu {
+        background-image: none;
+        background-color: #ffffff;
+        padding: 1rem;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 2;
+        border-radius: 10px;
+        border: solid 1px #A28444;
+    }
+
+    .Cont-Menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Logo {
+        height: 40px;
+    }
+
+    .Cont-Menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .Cont-Menu-List a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .Burger-Menu {
         display: none;
+        flex-direction: column;
+        cursor: pointer;
 
     }
+
+    .Burger-Menu span {
+        height: 4px;
+        width: 30px;
+        background-color: #a28444;
+        margin: 4px 0;
+    }
+
+    .Cont-Menu {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    
+    .Cont-Menu-Leang {
+        position: relative;
+        background: rgb(255, 255, 255);
+        padding: 1rem;
+        gap: 2rem;
+        border-radius: 10px;
+        border: solid 1px #A28444;
+    }
+
+    .Cont-Menu.show {
+        display: flex;
+        position: fixed;    
+        width: calc(100% - 3rem);
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        gap: 2rem;
+        background-image: url(./images/fon.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .Cont-Menu-List {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        gap: 2rem;
+    }
+
+
+    .Burger-Menu {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /*  */
+
     .MH1 {
 
         width: max-content;
         margin: auto;
     }
+
     .MP {
         display: none;
     }
+
     /* Стили для планшетов */
     * {
         font-weight: 500;
     }
+
     .Cont-ElemImages-Main {
         background: #ffffffa1;
         padding: 0.5rem;
         border-radius: 0px;
     }
+
     .Main-Content-DOWN {
 
         width: 100%;
-        justify-content: normal;    
-    }
-    .Menu {
-        width: 100vw;
+        justify-content: normal;
     }
 
     .Cont-Menu {
@@ -2415,7 +2613,7 @@
     }
 
     .Main-Content {
-        width:100% ;
+        width: 100%;
         justify-items: center;
     }
 
@@ -2648,4 +2846,6 @@
         height: max-content;
 
     }
+
+
 }
