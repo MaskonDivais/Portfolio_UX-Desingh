@@ -28,6 +28,7 @@
         <span></span>
         <span></span>
       </div>
+
       <div class="Cont-Menu"  id="menu-list">
         <a href=""><img src="./images/Logo.png" title="" class="Logo"></a>
         <div class="Cont-Menu-List">
@@ -945,8 +946,19 @@
 
   document.getElementById('burger-menu').addEventListener('click', function() {
   const menuList = document.getElementById('menu-list');
-  menuList.classList.toggle('show');
+  if (menuList.classList.contains('show')) {
+    menuList.classList.remove('show');
+    setTimeout(() => {
+      menuList.style.display = 'none';
+    }, 500); // Время, соответствующее длительности анимации перехода
+  } else {
+    menuList.style.display = 'flex';
+    setTimeout(() => {
+      menuList.classList.add('show');
+    }, 10); // Небольшая задержка для запуска анимации
+  }
 });
+
 
   </script>
 </body>
