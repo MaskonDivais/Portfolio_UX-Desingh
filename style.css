@@ -50,7 +50,7 @@
 }
 
 .MH1 {
-    
+
     display: inline-flex;
     font-family: 'Inter', sans-serif;
     font-weight: 800;
@@ -65,14 +65,17 @@
     font-size: 38px;
 
 }
-.mpa1{
+
+.mpa1 {
     grid-area: MPA1;
 }
-.mpa1{
+
+.mpa1 {
     grid-area: MPA2;
 }
+
 .MPA {
-  
+
     color: #fff;
     font-size: 18px;
 }
@@ -1058,7 +1061,7 @@
     grid-area: CEM;
     /* background: linear-gradient(90deg, #ffffff00, #ffffff, #ffffff00); */
     background: linear-gradient(90deg, #ffffff00, #ffffff);
-    
+
     display: grid;
     padding: 1rem;
     gap: 0.5rem;
@@ -2069,7 +2072,7 @@
     .Menu {
         background-image: none;
         background-color: #ffffff;
-        padding: 1rem;
+        padding: 0.5rem;
         width: 30px;
         height: 30px;
         position: fixed;
@@ -2541,6 +2544,7 @@
     .Main {
         align-items: end;
     }
+
     .MPA {
         color: #fff;
         font-size: 15px;
@@ -2553,7 +2557,7 @@
     .Menu {
         background-image: none;
         background-color: #ffffff;
-        padding: 1rem;
+        padding: 0.5rem;
         width: 30px;
         height: 30px;
         position: fixed;
@@ -2947,10 +2951,22 @@
 
         background-size: cover;
         background-repeat: no-repeat;
-        align-items: end;
+        align-items: center;
     }
+
     .MPA {
         color: #fff;
         font-size: 15px;
+    }
+
+    .MMH1 {
+
+        font-weight: 800;
+        font-size: 38px;
+    }
+
+    .Cont-Text_Absolut {
+        gap: 0.5rem;
+
     }
 }
